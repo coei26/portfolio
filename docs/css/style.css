@@ -10,3 +10,17 @@ html, body {
     padding-right: 200px;
     padding-top: 150px;
 }
+
+img {
+    width: 12%;
+    height: 12%;
+    margin-left: 150px;
+}
+
+li:hover {
+    background-color:beige;
+}
+
+#logo:hover {
+    opacity: 80%;
+}
