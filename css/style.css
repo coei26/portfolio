@@ -5,3 +5,8 @@ html, body {
     padding: 0px;
 }
 
+#page-layout {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 150px;
+}
