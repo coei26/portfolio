@@ -48,7 +48,7 @@ img {
 }
 
 #here {
-  color: slategray;
+  color: gray;
 }
 
 #here:link {
@@ -78,6 +78,12 @@ img {
 
 #vsco:hover {
   opacity: 40%;
+}
+
+#view-button:hover {
+  background-color: beige;
+  color: black;
+  border: beige;
 }
 
 footer {
