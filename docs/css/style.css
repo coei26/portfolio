@@ -68,6 +68,18 @@ img {
   text-decoration: none;
 }
 
+#social-links > a {
+  color: black;
+}
+
+#social-links > a:hover {
+  color: lightgray;
+}
+
+#vsco:hover {
+  opacity: 40%;
+}
+
 footer {
   position: absolute;
   bottom: 0;
