@@ -1,26 +1,76 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
-#page-layout {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 125px;
+#general-layout {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
 }
 
 img {
-    width: 12%;
-    height: 12%;
-    margin-left: 150px;
+  width: 12%;
+  height: 12%;
+  margin-left: 150px;
 }
 
-li:hover {
-    background-color:beige;
+.nav-link:hover {
+  background-color: beige;
 }
 
 #logo:hover {
-    opacity: 70%;
+  opacity: 70%;
+}
+
+#page-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-portrait > img {
+  width: 100%;
+  padding-right: 100px;
+}
+
+.index-portrait > img {
+  width: 40%;
+  float: right;
+}
+
+.index-description {
+  font-size: 1.15rem;
+  float: left;
+}
+
+#here {
+  color: slategray;
+}
+
+#here:link {
+  text-decoration: none;
+}
+
+#here:visited {
+  text-decoration: none;
+}
+
+#here:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+#here:active {
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Height of the footer */
 }
