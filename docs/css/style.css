@@ -8,7 +8,7 @@ html, body {
 #page-layout {
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 150px;
+    padding-top: 125px;
 }
 
 img {
@@ -22,5 +22,5 @@ li:hover {
 }
 
 #logo:hover {
-    opacity: 80%;
+    opacity: 70%;
 }
