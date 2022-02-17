@@ -25,10 +25,10 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" aria-current="page"
-          ><span id="logo"><img src="img/logo.jpg" /></span
+          ><span id="logo"><img id="cursive-logo" src="img/logo.jpg" /></span
         ></a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -54,7 +54,8 @@
     <!-- Page Content -->
     <div class="container-fluid" id="general-layout">
       <div class="container-fluid" id="page-layout">
-        <section class="index-description">
+        <div class="container">
+          <section class="index-description">
           <h1>hello! i'm catherine.</h1>
           <br />
           <p>
@@ -63,21 +64,24 @@
             pursuing a B.S. in Human Computer Interaction. <br /><br />
             Take a peek at what I've been up to
             <a href="portfolio.html" id="here"
-              ><b style="font-size: 1.1rem">HERE</b></a
+              ><b>HERE</b></a
             >.
             <br /><br>
             I'd love to connect with you!
             <div class="container" id="social-links">
-              <a href="mailto:coei@ucsd.edu"style="padding-right: 20px"><i class="bi bi-envelope"></i></a>
-              <a href="https://www.linkedin.com/in/catherine-oei/" target="_blank" style="padding-right: 20px"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/coei26" target="_blank" style="padding-right: 20px"><i class="bi-github" role="img" aria-label="GitHub"></i></a>
-              <a style="display: inline-block; border: 0; text-decoration: none;" href="http://vsco.co/catherineoei?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid" target="_blank"><img id="vsco" style="width: 19px; height: 19px; margin: 0px; margin-bottom: 5px" src="http://assets.vsco.co/assets/images/assets/Logo_black_16.png" alt="VSCO Logo" /></a>
+              <a href="mailto:coei@ucsd.edu"><i class="bi bi-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/catherine-oei/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/coei26" target="_blank"><i class="bi-github" role="img" aria-label="GitHub"></i></a>
+              <a style="display: inline-block; border: 0; text-decoration: none;" href="http://vsco.co/catherineoei?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid" target="_blank"><img id="vsco" src="http://assets.vsco.co/assets/images/assets/Logo_black_16.png" alt="VSCO Logo" /></a>
             </div>
           </p>
         </section>
-        <section class="index-portrait">
-          <img src="img/index-portrait.jpg" alt="Catherine" />
-        </section>
+        </div>
+        <div class="container">
+          <section class="index-portrait">
+            <img src="img/index-portrait.jpg" alt="Catherine" />
+          </section>
+        </div>
       </div>
     </div>
     <footer class="text-center text-white" style="background-color: white">

@@ -10,12 +10,13 @@ body {
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-img {
-  width: 12%;
-  height: 12%;
-  margin-left: 150px;
+#cursive-logo {
+  width: 10%;
+  height: 10%;
+  margin-left: 100px;
 }
 
 .nav-link:hover {
@@ -38,7 +39,7 @@ img {
 }
 
 .index-portrait > img {
-  width: 40%;
+  width: 50%;
   float: right;
 }
 
@@ -70,10 +71,18 @@ img {
 
 #social-links > a {
   color: black;
+  padding-right: 20px;
 }
 
 #social-links > a:hover {
   color: lightgray;
+}
+
+#vsco {
+  width: 19px;
+  height: 19px;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 #vsco:hover {
@@ -87,8 +96,178 @@ img {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 50px; /* Height of the footer */
+}
+
+@media (min-width: 320px) {
+  #general-layout {
+    padding: 0.5rem;
+  }
+
+  #cursive-logo {
+    width: 25%;
+    height: 25%;
+    margin-left: 0.5rem;
+  }
+
+  li {
+    font-size: 0.65rem;
+  }
+
+  .about-portrait > img {
+    display: none;
+  }
+
+  h1 {
+    font-size: 0.98rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+
+  #social-links > a {
+    display: inline-block;
+    padding-right: 0.4rem;
+  }
+
+  #social-links > a > i {
+    font-size: 0.7rem;
+  }
+
+  #social-links > a > img {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-bottom: 0.05rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    position: fixed;
+  }
+}
+
+@media (min-width: 480px) {
+  #general-layout {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #cursive-logo {
+    width: 18%;
+    height: 18%;
+    margin-left: 0.5rem;
+  }
+
+  .index-portrait > img {
+    display: inline;
+  }
+
+  .about-portrait > img {
+    display: inline;
+    padding-bottom: 100px;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  #social-links > a {
+    display: inline-block;
+    padding-right: 0.9rem;
+  }
+
+  #social-links > a > i {
+    font-size: 0.9rem;
+  }
+
+  #social-links > a > img {
+    width: 0.95rem;
+    height: 0.95rem;
+    margin-bottom: 0.1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    position: fixed;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #general-layout {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #cursive-logo {
+    width: 12%;
+    height: 12%;
+    margin-left: 150px;
+  }
+
+  li {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .about-portrait > img {
+    display: inline;
+    padding-left: 50px;
+  }
+
+  .index-portrait > img {
+    display: inline;
+  }
+
+  #social-links > a {
+    display: inline-block;
+    padding-right: 1.1rem;
+  }
+
+  #social-links > a > i {
+    font-size: 1.25rem;
+  }
+
+  #social-links > a > img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-bottom: 0.4em;
+  }
+
+  footer {
+    font-size: 1rem;
+    position: fixed;
+  }
 }
