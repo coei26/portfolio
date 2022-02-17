@@ -103,6 +103,10 @@ footer {
 }
 
 @media (min-width: 320px) {
+  .nav-link:hover {
+    background-color: beige;
+  }
+
   #general-layout {
     padding: 0.5rem;
   }
@@ -141,7 +145,6 @@ footer {
   #social-links > a > img {
     width: 0.8rem;
     height: 0.8rem;
-    margin-bottom: 0.05rem;
   }
 
   footer {
