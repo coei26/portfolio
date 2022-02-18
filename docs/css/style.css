@@ -23,6 +23,10 @@ body {
   background-color: beige;
 }
 
+#current {
+  background-color: beige;
+}
+
 #logo:hover {
   opacity: 70%;
 }
