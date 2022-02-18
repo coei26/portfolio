@@ -126,11 +126,11 @@ h4 {
 }
 
 #pudding-description > h4:hover {
-  color: palevioletred;
+  color: rgb(158, 151, 151);
 }
 
 #pudding-description > a {
-  color: palevioletred;
+  color: rgb(158, 151, 151);
 }
 
 footer {
