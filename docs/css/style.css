@@ -95,6 +95,44 @@ body {
   border: beige;
 }
 
+h4 {
+  text-decoration: none;
+}
+
+#carousel-container {
+  width: 60%;
+}
+
+.carousel-slide-title {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.carousel-slide-title:hover {
+  color: beige;
+}
+
+.carousel-description {
+  text-align: left;
+}
+
+#leibovitz-description {
+  background: rgba(179, 189, 211, 0.192);
+}
+
+#pudding-description {
+  color: black;
+}
+
+#pudding-description > h4:hover {
+  color: palevioletred;
+}
+
+#pudding-description > a {
+  color: palevioletred;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -133,6 +171,14 @@ footer {
     font-size: 0.6rem;
   }
 
+  .carousel-slide-title {
+    font-size: 0.8rem;
+  }
+
+  .carousel-description {
+    font-size: 0.8rem;
+  }
+
   #social-links > a {
     display: inline-block;
     padding-right: 0.4rem;
@@ -150,6 +196,9 @@ footer {
   footer {
     font-size: 0.7rem;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -206,6 +255,9 @@ footer {
   footer {
     font-size: 0.9rem;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -272,5 +324,8 @@ footer {
   footer {
     font-size: 1rem;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
