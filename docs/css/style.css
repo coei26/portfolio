@@ -197,8 +197,9 @@ footer {
   }
 
   #social-links > a > img {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-top: 5.5px;
   }
 
   footer {
