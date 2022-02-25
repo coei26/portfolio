@@ -9,8 +9,14 @@ body {
 #general-layout {
   padding-left: 200px;
   padding-right: 200px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
+}
+
+#page-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #cursive-logo {
@@ -29,27 +35,6 @@ body {
 
 #logo:hover {
   opacity: 70%;
-}
-
-#page-layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-portrait > img {
-  width: 100%;
-  padding-right: 100px;
-}
-
-.index-portrait > img {
-  width: 50%;
-  float: right;
-}
-
-.index-description {
-  font-size: 1.15rem;
-  float: left;
 }
 
 #here {
@@ -71,6 +56,16 @@ body {
 
 #here:active {
   text-decoration: none;
+}
+
+.index-portrait > img {
+  width: 50%;
+  float: right;
+}
+
+.index-description {
+  font-size: 1.15rem;
+  float: left;
 }
 
 #social-links > a {
@@ -240,11 +235,6 @@ footer {
     display: inline;
   }
 
-  .about-portrait > img {
-    display: inline;
-    padding-bottom: 100px;
-  }
-
   li {
     font-size: 0.8rem;
   }
@@ -269,7 +259,14 @@ footer {
   #social-links > a > img {
     width: 0.95rem;
     height: 0.95rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .about-portrait > img {
+    width: 80%;
+    margin-top: 40px;
+    padding-bottom: 100px;
+    padding-right: 0px;
   }
 
   footer {
@@ -281,7 +278,7 @@ footer {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 1.7rem;
   }
@@ -289,12 +286,25 @@ footer {
   p {
     font-size: 0.9rem;
   }
+
+  #carousel-container {
+    width: 60%;
+  }
+
+  .carousel-description {
+    font-size: 0.4rem;
+  }
+
+  .about-portrait > img {
+    display: inline;
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: 1000px) {
   #general-layout {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -302,7 +312,7 @@ footer {
   #cursive-logo {
     width: 12%;
     height: 12%;
-    margin-left: 150px;
+    margin-left: 50px;
   }
 
   li {
@@ -319,7 +329,7 @@ footer {
 
   .about-portrait > img {
     display: inline;
-    padding-left: 50px;
+    padding-bottom: 200px;
   }
 
   .index-portrait > img {
@@ -338,7 +348,11 @@ footer {
   #social-links > a > img {
     width: 1.25rem;
     height: 1.25rem;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.6em;
+  }
+
+  .carousel-description {
+    font-size: 0.5rem;
   }
 
   footer {
@@ -347,5 +361,34 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #general-layout {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+  }
+
+  .about-portrait {
+    padding-left: 50px;
+  }
+
+  .about-portrait > img {
+    margin-top: 55px;
+    padding-bottom: 150px;
+  }
+
+  #cursive-logo {
+    margin-left: 200px;
+  }
+
+  #carousel-container {
+    width: 60%;
+  }
+
+  .carousel-description {
+    font-size: 0.7rem;
   }
 }
