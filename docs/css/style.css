@@ -163,8 +163,19 @@ footer {
     font-size: 0.65rem;
   }
 
+  #text {
+    display: inline-block;
+  }
+
+  #image {
+    display: inline;
+  }
+
   .about-portrait > img {
-    display: none;
+    width: 80%;
+    padding-bottom: 280px;
+    margin-top: 80px;
+    padding-right: 0px;
   }
 
   h1 {
@@ -175,21 +186,9 @@ footer {
     font-size: 0.6rem;
   }
 
-  .carousel-container {
-    padding-bottom: 20px;
-  }
-
-  .carousel-slide-title {
-    font-size: 0.8rem;
-  }
-
-  .carousel-description {
-    font-size: 0.8rem;
-  }
-
   #social-links > a {
     display: inline-block;
-    padding-right: 0.4rem;
+    padding-right: 0.25rem;
   }
 
   #social-links > a > i {
@@ -199,7 +198,19 @@ footer {
   #social-links > a > img {
     width: 0.7rem;
     height: 0.7rem;
-    margin-top: 2px;
+    margin-top: 4px;
+  }
+
+  #carousel-container {
+    margin-bottom: 60px;
+  }
+
+  .carousel-slide-title {
+    font-size: 0.8rem;
+  }
+
+  .carousel-description {
+    font-size: 0.8rem;
   }
 
   footer {
