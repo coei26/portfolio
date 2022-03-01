@@ -98,6 +98,10 @@ h5 {
   color: grey;
 }
 
+.card-title {
+  color: black;
+}
+
 #carousel-container {
   width: 60%;
 }
