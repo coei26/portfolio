@@ -94,6 +94,10 @@ body {
   border: beige;
 }
 
+table {
+  border: none;
+}
+
 h5 {
   color: grey;
 }
@@ -129,7 +133,7 @@ h5 {
 }
 
 #pudding-description > h4:hover {
-  color: rgb(158, 151, 151);
+  background: beige;
 }
 
 #pudding-description > a {
@@ -433,6 +437,6 @@ footer {
   }
 
   .carousel-description {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
 }
