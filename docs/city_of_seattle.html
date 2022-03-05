@@ -165,57 +165,73 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Column</th>
-              <th scope="col">Data Type</th>
-              <th scope="col">Semantics</th>
+              <th scope="col"><p>Column</p></th>
+              <th scope="col"><p>Data Type</p></th>
+              <th scope="col">
+                <p>Semantics</p>
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="row">latitude</td>
-              <td>
-                Position<br /><br />
-                This is spatial data that is paired with longitude to
-                quantitatively describe a location on the Earth's surface.
+              <td scope="row">
+                <p>latitude</p>
               </td>
               <td>
-                Key<br /><br />
-                This key attribute represents the angular distance of a place
-                north or south of the Earth's equator in degrees. In this
-                dataset, the latitudes are all within the city of Seattle.
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">longitude</td>
-              <td>
-                Position<br /><br />
-                This is spatial data that is paired with latitude to
-                quantitatively describe a location on the Earth's surface.
+                <p>
+                  Position<br /><br />
+                  This is spatial data that is paired with longitude to
+                  quantitatively describe a location on the Earth's surface.
+                </p>
               </td>
               <td>
-                Key<br /><br />
-                This key attribute represents the angular distance of a place
-                east or west of the meridian at Greenwich, England, expressed in
-                degrees. In this dataset, the longitudes are all within the city
-                of Seattle.
+                <p>
+                  Key<br /><br />
+                  This key attribute represents the angular distance of a place
+                  north or south of the Earth's equator in degrees. In this
+                  dataset, the latitudes are all within the city of Seattle.
+                </p>
               </td>
             </tr>
             <tr>
-              <td scope="row">n</td>
+              <td scope="row"><p>longitude</p></td>
               <td>
-                Attribute<br /><br />
-                This is a specific property that is measured, observed, or
-                logged. The type of this attribute is ordered quantitative data,
-                as each number corresponds to a specific latitude-longitude
-                pair.
+                <p>
+                  Position<br /><br />
+                  This is spatial data that is paired with latitude to
+                  quantitatively describe a location on the Earth's surface.
+                </p>
               </td>
               <td>
-                Value<br /><br />
-                This value attribute represents the total number of assault
-                crimes recorded at each specific latitude-longitude pair from
-                2008 to 2020 in the city of Seattle. This number was a new
-                attribute derived by filtering the "offense" column in the
-                original data for any offenses relating to assault.
+                <p>
+                  Key<br /><br />
+                  This key attribute represents the angular distance of a place
+                  east or west of the meridian at Greenwich, England, expressed
+                  in degrees. In this dataset, the longitudes are all within the
+                  city of Seattle.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row"><p>n</p></td>
+              <td>
+                <p>
+                  Attribute<br /><br />
+                  This is a specific property that is measured, observed, or
+                  logged. The type of this attribute is ordered quantitative
+                  data, as each number corresponds to a specific
+                  latitude-longitude pair.
+                </p>
+              </td>
+              <td>
+                <p>
+                  Value<br /><br />
+                  This value attribute represents the total number of assault
+                  crimes recorded at each specific latitude-longitude pair from
+                  2008 to 2020 in the city of Seattle. This number was a new
+                  attribute derived by filtering the "offense" column in the
+                  original data for any offenses relating to assault.
+                </p>
               </td>
             </tr>
           </tbody>
@@ -225,103 +241,128 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Design Choice</th>
-              <th scope="col">Rationale</th>
+              <th scope="col"><p>Design Choice</p></th>
+              <th scope="col"><p>Rationale</p></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="row">Using a point map</td>
+              <td scope="row"><p>Using a point map</p></td>
               <td>
-                Due to the nature of the question being about location, I chose
-                to visualize the data using a map, given the latitudinal and
-                longitudinal coordinates of the data. Since I was interested in
-                the city of Seattle in particular, it was most effective to use
-                points to denote locations rather than filled regions of space.
-                Additionally, using points satisfied the granularity I was
-                interested in exploring, as it is easy to locate where the
-                greatest number of assault offenses occur down to a very
-                specific location on a street.
+                <p>
+                  Due to the nature of the question being about location, I
+                  chose to visualize the data using a map, given the latitudinal
+                  and longitudinal coordinates of the data. Since I was
+                  interested in the city of Seattle in particular, it was most
+                  effective to use points to denote locations rather than filled
+                  regions of space. Additionally, using points satisfied the
+                  granularity I was interested in exploring, as it is easy to
+                  locate where the greatest number of assault offenses occur
+                  down to a very specific location on a street.
+                </p>
               </td>
             </tr>
             <tr>
-              <td scope="row">Including a legend</td>
+              <td scope="row"><p>Including a legend</p></td>
               <td>
-                Including a legend makes it very clear to the viewer that each
-                point in the map is scaled by size, and that each point
-                represents the total number of assault offenses that have
-                occurred at the location from 2008 to 2020. While the dot sizes
-                might not seem most ideal, they do effectively communicate the
-                range in number of assault offenses, with the maximum number of
-                assault offenses at one location being 1,252.
+                <p>
+                  Including a legend makes it very clear to the viewer that each
+                  point in the map is scaled by size, and that each point
+                  represents the total number of assault offenses that have
+                  occurred at the location from 2008 to 2020. While the dot
+                  sizes might not seem most ideal, they do effectively
+                  communicate the range in number of assault offenses, with the
+                  maximum number of assault offenses at one location being
+                  1,252.
+                </p>
               </td>
             </tr>
             <tr>
-              <td scope="row">Excluding (0,0) latitude-longitude values</td>
+              <td scope="row">
+                <p>Excluding (0,0) latitude-longitude values</p>
+              </td>
               <td>
-                While filtering the data, I noticed that there were a number of
-                assault offenses that had the value 0 for both latitude and
-                longitude. Since the purpose of this visualization was to
-                display different locations in Seattle where assault crimes
-                occurred, including these points would not only be irrelevant to
-                the question, but would also be inaccurate, as it is clear the
-                location of these particular assault offenses were not available
-                or documented.
+                <p>
+                  While filtering the data, I noticed that there were a number
+                  of assault offenses that had the value 0 for both latitude and
+                  longitude. Since the purpose of this visualization was to
+                  display different locations in Seattle where assault crimes
+                  occurred, including these points would not only be irrelevant
+                  to the question, but would also be inaccurate, as it is clear
+                  the location of these particular assault offenses were not
+                  available or documented.
+                </p>
               </td>
             </tr>
             <tr>
-              <td scope="row">Transforming original dataset</td>
+              <td scope="row"><p>Transforming original dataset</p></td>
               <td>
-                I performed four main transformations to the original dataset.
+                <p>
+                  I performed four main transformations to the original dataset.
+                </p>
                 <ol>
                   <li>
-                    I grouped (aggregated) the data by the columns latitude and
-                    longitude.
+                    <p>
+                      I grouped (aggregated) the data by the columns latitude
+                      and longitude.
+                    </p>
                   </li>
                   <li>
-                    I filtered to exclude the latitude and longitude columns
-                    containing the value 0.
+                    <p>
+                      I filtered to exclude the latitude and longitude columns
+                      containing the value 0.
+                    </p>
                   </li>
                   <li>
-                    I filtered the offense column to only include rows
-                    containing the word "Assault".
+                    <p>
+                      I filtered the offense column to only include rows
+                      containing the word "Assault".
+                    </p>
                   </li>
                   <li>
-                    I summed up the number of assault offenses for each
-                    latitude-longitude pair and created a new column, n to
-                    represent the numbers.
+                    <p>
+                      I summed up the number of assault offenses for each
+                      latitude-longitude pair and created a new column, n to
+                      represent the numbers.
+                    </p>
                   </li>
                 </ol>
-                By transforming the original dataset, I was left with a smaller
-                subset of data that consisted wholly of the relevant values used
-                in my visualization. Additionally, by transforming the data, I
-                was able to use a new column of data that allowed me to answer a
-                more specific question and ultimately created a more interesting
-                visualization.
+                <p>
+                  By transforming the original dataset, I was left with a
+                  smaller subset of data that consisted wholly of the relevant
+                  values used in my visualization. Additionally, by transforming
+                  the data, I was able to use a new column of data that allowed
+                  me to answer a more specific question and ultimately created a
+                  more interesting visualization.
+                </p>
               </td>
             </tr>
             <tr>
-              <td scope="row">Visually encoding by size</td>
+              <td scope="row"><p>Visually encoding by size</p></td>
               <td>
-                To answer my question of locations where assault crimes most
-                frequently occurred, I included the visual encoding of size. The
-                greater the size, the greater the number of assault offenses
-                that occurred at the location. As a result, encoding by size was
-                effective in denoting locations where assault crimes more
-                frequently occurred.
+                <p>
+                  To answer my question of locations where assault crimes most
+                  frequently occurred, I included the visual encoding of size.
+                  The greater the size, the greater the number of assault
+                  offenses that occurred at the location. As a result, encoding
+                  by size was effective in denoting locations where assault
+                  crimes more frequently occurred.
+                </p>
               </td>
             </tr>
             <tr>
-              <td scope="row">Using a grayscale color scheme</td>
+              <td scope="row"><p>Using a grayscale color scheme</p></td>
               <td>
-                While I could have encoded different colors for locations where
-                the greatest numbers of assault offenses occurred, the size of
-                the data made this unnecessary. Adding an encoding for color
-                could also convolute the visualization, as size is already
-                encoded. The black points nicely contrast the gray map
-                background, making the map accessible to those with vision
-                impairments, and using a grayscale makes this visualization
-                accessible to those who may be colorblind.
+                <p>
+                  While I could have encoded different colors for locations
+                  where the greatest numbers of assault offenses occurred, the
+                  size of the data made this unnecessary. Adding an encoding for
+                  color could also convolute the visualization, as size is
+                  already encoded. The black points nicely contrast the gray map
+                  background, making the map accessible to those with vision
+                  impairments, and using a grayscale makes this visualization
+                  accessible to those who may be colorblind.
+                </p>
               </td>
             </tr>
           </tbody>
