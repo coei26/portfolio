@@ -196,9 +196,14 @@ h5 {
 .back-link {
   color: black;
 }
+
 .back-link:hover {
-  color: grey;
   text-decoration: none;
+}
+
+.back-link > h3:hover {
+  background-color: beige;
+  color: black;
 }
 
 footer {
