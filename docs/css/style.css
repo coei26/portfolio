@@ -88,12 +88,6 @@ body {
   opacity: 40%;
 }
 
-#view-button:hover {
-  background-color: beige;
-  color: black;
-  border: beige;
-}
-
 table {
   border: none;
 }
@@ -138,6 +132,65 @@ h5 {
 
 #pudding-description > a {
   color: rgb(158, 151, 151);
+}
+
+#google-staging {
+  width: 60%;
+  margin-left: 80px;
+}
+
+#ideation-sketch {
+  width: 40%;
+  margin-left: 80px;
+}
+
+#text-image {
+  display: flex;
+}
+
+#view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#view-button:hover {
+  background-color: beige;
+  color: black;
+  border: beige;
+}
+
+#preview-image-google {
+  width: 60%;
+  margin-left: 80px;
+  opacity: 50%;
+}
+
+#preview-image-seattle {
+  width: 80%;
+  margin-left: 20px;
+  opacity: 50%;
+}
+
+#preview-image-safepath {
+  width: 70%;
+  margin-left: 40px;
+  opacity: 50%;
+}
+
+#preview-image-advising {
+  width: 95%;
+  margin-left: 20px;
+  opacity: 50%;
 }
 
 .back-link {

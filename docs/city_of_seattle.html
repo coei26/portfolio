@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css"
+      media="screen"
+    />
+    <link rel="icon" , href="img/logo.jpg" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" aria-current="page"
+          ><span id="logo"><img id="cursive-logo" src="img/logo.jpg" /></span
+        ></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="current" href="portfolio.html"
+                >portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid" id="general-layout">
+      <h2>Introduction</h2>
+      <p>
+        This visualization was created from a dataset I transformed from the
+        <a
+          href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5"
+          >Seattle Police Department's Crime Data</a
+        >, which consists of offenses from the years 2008 to 2020. As a student
+        going to school and living in the city of Seattle, I was particularly
+        interested in conducting a more granular exploration of the different
+        locations where assault crimes were most frequent over the years.
+      </p>
+
+      <div section="data visualization">
+        <div
+          class="tableauPlaceholder"
+          id="viz1617873198135"
+          style="position: relative"
+        >
+          <noscript>
+            <a href="#"
+              ><img
+                alt="INFO 474 - Assignment 1 "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IN&#47;INFO474-Assignment1&#47;INFO474-Assignment1&#47;1_rss.png"
+                style="border: none"
+            /></a> </noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param
+              name="name"
+              value="INFO474-Assignment1&#47;INFO474-Assignment1"
+            />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IN&#47;INFO474-Assignment1&#47;INFO474-Assignment1&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1617873198135");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = "1024px";
+            vizElement.style.height = "795px";
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = "1024px";
+            vizElement.style.height = "795px";
+          } else {
+            vizElement.style.width = "100%";
+            vizElement.style.height = "727px";
+          }
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+
+      <div section="description" class="page-header">
+        <h2>The Story</h2>
+        <p>
+          Where in Seattle do assault crimes most frequently occur? Whether it
+          be a student deciding which routes to walk to get to class, new
+          residents looking to buy a home, or even police departments deciding
+          on specific patrol routes, knowing where assault crimes have most
+          frequently occurred provide valuable information to any given person.
+          Creating a visualization that answers this question can reveal
+          important insights. For example, as a student at the University of
+          Washington, zooming into the University District area will reveal that
+          a greater number of assault offenses have occurred along University
+          Way NE relative to other surrounding areas of the school. Therefore,
+          when walking to class or alone at night, University Way NE may be an
+          area to avoid. In this same way, zooming out of the map will show that
+          the downtown areas of Seattle (Belltown, International District) have
+          greater occurrences of assault crimes. In contrast, it is evident that
+          some of the areas on the east side of Seattle such as Broadmoor, Denny
+          Blaine and Madrona contain significantly less assault incidents.
+          Therefore, these might be neighborhoods potential home buyers might
+          consider, and interestingly, these happen to be some of the most
+          affluent neighborhoods in the city of Seattle.
+        </p>
+
+        <h2>Dataset Analysis</h2>
+        <p>
+          The type of the transformed dataset is a
+          <b>multidimensional table</b>. There are two keys,
+          <em>latitude</em> and <em>longitude</em>, which are required to look
+          up the value attribute <em>n</em>.
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Column</th>
+              <th scope="col">Data Type</th>
+              <th scope="col">Semantics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">latitude</td>
+              <td>
+                Position<br /><br />
+                This is spatial data that is paired with longitude to
+                quantitatively describe a location on the Earth's surface.
+              </td>
+              <td>
+                Key<br /><br />
+                This key attribute represents the angular distance of a place
+                north or south of the Earth's equator in degrees. In this
+                dataset, the latitudes are all within the city of Seattle.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">longitude</td>
+              <td>
+                Position<br /><br />
+                This is spatial data that is paired with latitude to
+                quantitatively describe a location on the Earth's surface.
+              </td>
+              <td>
+                Key<br /><br />
+                This key attribute represents the angular distance of a place
+                east or west of the meridian at Greenwich, England, expressed in
+                degrees. In this dataset, the longitudes are all within the city
+                of Seattle.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">n</td>
+              <td>
+                Attribute<br /><br />
+                This is a specific property that is measured, observed, or
+                logged. The type of this attribute is ordered quantitative data,
+                as each number corresponds to a specific latitude-longitude
+                pair.
+              </td>
+              <td>
+                Value<br /><br />
+                This value attribute represents the total number of assault
+                crimes recorded at each specific latitude-longitude pair from
+                2008 to 2020 in the city of Seattle. This number was a new
+                attribute derived by filtering the "offense" column in the
+                original data for any offenses relating to assault.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Design Choices</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Design Choice</th>
+              <th scope="col">Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Using a point map</td>
+              <td>
+                Due to the nature of the question being about location, I chose
+                to visualize the data using a map, given the latitudinal and
+                longitudinal coordinates of the data. Since I was interested in
+                the city of Seattle in particular, it was most effective to use
+                points to denote locations rather than filled regions of space.
+                Additionally, using points satisfied the granularity I was
+                interested in exploring, as it is easy to locate where the
+                greatest number of assault offenses occur down to a very
+                specific location on a street.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Including a legend</td>
+              <td>
+                Including a legend makes it very clear to the viewer that each
+                point in the map is scaled by size, and that each point
+                represents the total number of assault offenses that have
+                occurred at the location from 2008 to 2020. While the dot sizes
+                might not seem most ideal, they do effectively communicate the
+                range in number of assault offenses, with the maximum number of
+                assault offenses at one location being 1,252.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Excluding (0,0) latitude-longitude values</td>
+              <td>
+                While filtering the data, I noticed that there were a number of
+                assault offenses that had the value 0 for both latitude and
+                longitude. Since the purpose of this visualization was to
+                display different locations in Seattle where assault crimes
+                occurred, including these points would not only be irrelevant to
+                the question, but would also be inaccurate, as it is clear the
+                location of these particular assault offenses were not available
+                or documented.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Transforming original dataset</td>
+              <td>
+                I performed four main transformations to the original dataset.
+                <ol>
+                  <li>
+                    I grouped (aggregated) the data by the columns latitude and
+                    longitude.
+                  </li>
+                  <li>
+                    I filtered to exclude the latitude and longitude columns
+                    containing the value 0.
+                  </li>
+                  <li>
+                    I filtered the offense column to only include rows
+                    containing the word "Assault".
+                  </li>
+                  <li>
+                    I summed up the number of assault offenses for each
+                    latitude-longitude pair and created a new column, n to
+                    represent the numbers.
+                  </li>
+                </ol>
+                By transforming the original dataset, I was left with a smaller
+                subset of data that consisted wholly of the relevant values used
+                in my visualization. Additionally, by transforming the data, I
+                was able to use a new column of data that allowed me to answer a
+                more specific question and ultimately created a more interesting
+                visualization.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Visually encoding by size</td>
+              <td>
+                To answer my question of locations where assault crimes most
+                frequently occurred, I included the visual encoding of size. The
+                greater the size, the greater the number of assault offenses
+                that occurred at the location. As a result, encoding by size was
+                effective in denoting locations where assault crimes more
+                frequently occurred.
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Using a grayscale color scheme</td>
+              <td>
+                While I could have encoded different colors for locations where
+                the greatest numbers of assault offenses occurred, the size of
+                the data made this unnecessary. Adding an encoding for color
+                could also convolute the visualization, as size is already
+                encoded. The black points nicely contrast the gray map
+                background, making the map accessible to those with vision
+                impairments, and using a grayscale makes this visualization
+                accessible to those who may be colorblind.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+      <a class="back-link" href="portfolio.html"><h3>BACK</h3></a>
+    </div>
+    <footer class="text-center text-white" style="background-color: whitesmoke">
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: whitesmoke"
+      >
+        Built by Catherine Oei © 2022
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
