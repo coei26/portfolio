@@ -96,7 +96,8 @@ h5 {
   color: grey;
 }
 
-.card-title {
+.card-title,
+#chopin-description {
   color: black;
 }
 
