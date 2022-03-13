@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css"
+      media="screen"
+    />
+    <link rel="icon" , href="img/logo.jpg" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" aria-current="page"
+          ><span id="logo"><img id="cursive-logo" src="img/logo.jpg" /></span
+        ></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="current" href="portfolio.html"
+                >portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid" id="general-layout">
+      <div class="container">
+        <h3>Undergraduate Advising App</h3>
+        <h5>10 Weeks</h5>
+        <br />
+        <table>
+          <tbody>
+            <tr valign="top">
+              <td scope="col">
+                <h5>Challenge</h5>
+                <p>
+                  The current undergraduate advising website for the University
+                  of Washington only provides booking information for general
+                  advisers. Students exploring different majors or students with
+                  major-related questions must navigate to the individual
+                  webpages of each department to schedule appointments with
+                  advisers.
+                </p>
+              </td>
+              <td scope="col">
+                <h5>Proposed Solution</h5>
+                <p>
+                  After conducting some background research, our team designed
+                  and developed a more dedicated undergraduate advising site to
+                  allow users to schedule advising appointments with any
+                  department from one central location.
+                </p>
+              </td>
+              <td scope="col">
+                <h5>Impact</h5>
+                <p>
+                  Created an improved and functionable web app for undergraduate
+                  students at the University of Washington to explore different
+                  majors and schedule advising appointments with ease.
+                </p>
+              </td>
+            </tr>
+            <tr valign="top">
+              <td scope="col">
+                <h5>Role</h5>
+                <p>
+                  UI Design<br />
+                  Front-End Development<br />
+                  User Testing
+                </p>
+              </td>
+              <td scope="col">
+                <h5>Tools</h5>
+                <p>
+                  HTML / CSS<br />
+                  JavaScript<br />
+                  React.js<br />
+                  Firebase Hosting
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h5>Background + Research</h5>
+        <img
+          src="./img/advising/original-site.png"
+          alt="landing page for original UW advising site"
+          id="background-advising"
+        />
+        <br />
+        <p>
+          The current undergraduate advising website for the University of
+          Washington (UW) provides students with a multitude of resources
+          pertaining to degree requirements, major planning, academic support,
+          and more. The site as a whole includes lots of helpful resources with
+          the purpose of answering questions that undergraduate students might
+          ask during advising appointments. Given the size of the university,
+          this makes sense that these resources would be made available to
+          filter out the number of students scheduling advising appointments,
+          and to answer generic questions. However, the distinction between
+          general undergraduate advising and departmental advising isn't exactly
+          clear. <br /><br />
+        </p>
+        <img
+          src="./img/advising/original-site-advising.png"
+          alt="page students see when clicking on the 'book appointment' link on the original site"
+          id="background-advising"
+        />
+        <br /><br />
+        <p>
+          When students select "BOOK AN IN-PERSON OR ONLINE ADVISING
+          APPOINTMENT", they are taken to a page containing the content above.
+          The number of different links on this page could potentially be
+          overwhelming to a user, and it is definitely not what a student would
+          expect to encounter when clicking on the booking link. A student might
+          expect there to be calendar options to directly book adviser
+          appointments, but this is not the case. <br /><br />
+          While it is helpful that the current undergraduate advising site
+          includes major selection resources, it does not allow students to
+          schedule appointments with major advisers, only general education
+          advisers, and only students who have not declared a major have general
+          education advisers. In addition to the latter fact not being well
+          known, the site evidently caters to needs that are not solely specific
+          to undeclared students. Many freshman enter the University of
+          Washington as direct-to-major admits, meaning that they must also have
+          many questions about general education that can only really be
+          answered through this site and by general education advisers.
+          Moreover, if undeclared students want to ask questions more specific
+          to a major of interest, they must navigate to a unique website of the
+          respective department. This is a cumbersome and inefficient process
+          for those who are in the process of exploring many different majors.
+          Essentially, students may be misled in their understanding of the
+          purpose of the current undergraduate advising site. When looking to
+          meet with an adviser, they are taken to
+          <a href="https://www.washington.edu/uaa/advising/">this</a> general
+          advising website and may be unaware that major-specific questions can
+          only be answered by departmental advisers. It takes some digging, but
+          you can eventually find a
+          <a
+            href="http://www.washington.edu/uaa/advising/degree-overview/majors/advising-offices-by-program/"
+            >list</a
+          >
+          of all the departments at UW with contact information for the advising
+          offices. Even this resource is unfortunately outdated. The department
+          link only takes you to information in the Student Guide, rather than
+          the official website for appointment booking. The department links
+          page provides the email, phone number, and building of each advising
+          office and some descriptions of the program, but do not include direct
+          access to the methods for which each department website handles
+          adviser scheduling.
+        </p>
+        <h5>Brainstorming</h5>
+        <img
+          src="./img/advising/brainstorming.PNG"
+          alt="brainstorming sticky notes for interactive features"
+          id="brainstorming-sketch-advising"
+        />
+        <br />
+        <p>
+          For brainstorming, we exercised rapid ideation to acquire a diverse
+          list of possible interactive features for the web app. A constraint
+          for this project was the need to design and implement at least two
+          interactive features. Interactive features change the view of the web
+          page in some way based on some sort of dataset. (We planned to use our
+          own .JSON data) .
+        </p>
+        <h5>Ideation</h5>
+        <img
+          src="./img/advising/sketching.PNG"
+          alt="sketches of potential layouts"
+          id="ideation-sketch-advising"
+        />
+        <p>
+          Each team member began by creating 1-2 hand-drawn, low-fidelity
+          sketches of possible layouts for the advising webpage.
+        </p>
+        <h5>Prototyping</h5>
+        <div class="container-fluid" id="advising-carousel">
+          <div class="container">
+            <div
+              id="carouselIndicators-0"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <!--Indicators-->
+              <ol class="carousel-indicators-0">
+                <li
+                  data-target="#carouselIndicators-0"
+                  data-slide-to="0"
+                  class="active"
+                  id="indicators"
+                ></li>
+                <li
+                  data-target="#carouselIndicators"
+                  data-slide-to="1"
+                  id="indicators"
+                ></li>
+                <li
+                  data-target="#carouselndicators"
+                  data-slide-to="2"
+                  id="indicators"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    id="advising-carousel"
+                    src="./img/advising/landing-draft.PNG"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./img/advising/departmental-advising-draft.PNG"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./img/advising/filtering-draft.PNG"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselIndicators-0"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselIndicators-0"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <p>
+          Our first prototype was created solely with HTML, CSS, and JavaScript.
+          We also used mobile-first design principles to make this prototype
+          fully responsive (compatible with a wide range of screen sizes).<br /><br />Click
+          <a
+            href="https://info340-au20.github.io/project-1-coei26/"
+            target="_blank"
+            >here</a
+          >
+          to view it.
+        </p>
+        <br />
+        <h5>User Testing</h5>
+        <p>
+          Each team member asked 2-3 people to provide feedback on both the
+          design and usability of our first prototype. Following this, we
+          reiterated upon our first prototype by implementing their feedback.
+          Below are some comments our users gave us:
+        </p>
+        <ul>
+          <li>
+            <p>
+              "I don't know how to get to the landing page from the advising
+              page."
+            </p>
+          </li>
+          <li>
+            <p>
+              "It would be nice to automatically filter availability by the
+              slider instead of clicking a button."
+            </p>
+          </li>
+          <li>
+            <p>"The stars for favorites should be filled when selected."</p>
+          </li>
+        </ul>
+        <h5>Final Product</h5>
+        <br />
+        <div class="container-fluid" id="advising-carousel">
+          <div class="container">
+            <div
+              id="carouselIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <!--Indicators-->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    id="advising-carousel"
+                    src="./img/advising/landing.PNG"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./img/advising/departmental-advising.PNG"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./img/advising/filtering.PNG"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <p>
+          Reiterating upon our first prototype using the feedback we received
+          from user testing, our final design used HTML, CSS, JavaScript, and
+          added React.js and Firebase Hosting for data persistence. Some notable
+          differences between our first prototype and final design was the
+          navigation bar, which allowed for clearer organization of the website,
+          and the overall improvement of our interactive features. We also
+          integrated our web app with Firebase Hosting, so users could log in
+          and save their data. The data saved upon logging out were the
+          different departments each user favorited. <br /><br />Click
+          <a href="https://uw-advising.web.app/deptadvising" target="_blank"
+            >here</a
+          >
+          to view our final web app.
+          <br /><br />
+          ***Note: The feature I was responsible for implementing was the
+          "filtering" function. The "favorites" feature was implemented by
+          another team member, and may not be functionable anymore due to the
+          expiration of our Firebase Hosting.
+        </p>
+        <h5>Takeaways</h5>
+        <p>
+          This was my first experience designing and developing a web
+          application, and I absolutely loved it! User Testing was extremely
+          helpful; learning how to take critique and transform the feedback into
+          realistic, actionable steps was a rewarding process that contributed
+          to the success of this project.
+        </p>
+        <h5>Team Members</h5>
+        <p>
+          Apurv Goel<br />
+          Kevin Yip
+        </p>
+      </div>
+      <br /><br />
+      <a class="back-link" href="portfolio.html"><h3>BACK</h3></a>
+    </div>
+    <footer class="text-center text-white" style="background-color: whitesmoke">
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: whitesmoke"
+      >
+        Built by Catherine Oei © 2022
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
