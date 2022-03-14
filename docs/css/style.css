@@ -96,6 +96,10 @@ h5 {
   color: grey;
 }
 
+#ux-title:hover {
+  text-decoration: none;
+}
+
 #chopin-title,
 #chopin-description {
   color: black;
@@ -103,6 +107,10 @@ h5 {
 
 #chopin-title > h4:hover {
   background: beige;
+}
+
+#chopin-title:hover {
+  text-decoration: none;
 }
 
 #codrops-title > h4:hover {
@@ -128,16 +136,30 @@ h5 {
   text-align: left;
 }
 
+#pudding-title {
+  color: black;
+}
+
+#pudding-title:hover {
+  text-decoration: none;
+}
+
+#pudding-title > h4:hover {
+  background: beige;
+}
+
+#leibovitz-title:hover,
+#norman-title:hover {
+  text-decoration: none;
+  background: beige;
+}
+
 #leibovitz-description {
   background: rgba(179, 189, 211, 0.192);
 }
 
 #pudding-description {
   color: black;
-}
-
-#pudding-description > h4:hover {
-  background: beige;
 }
 
 #pudding-description > a {
