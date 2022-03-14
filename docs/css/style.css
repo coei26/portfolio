@@ -96,9 +96,18 @@ h5 {
   color: grey;
 }
 
-.card-title,
+#chopin-title,
 #chopin-description {
   color: black;
+}
+
+#chopin-title > h4:hover {
+  background: beige;
+}
+
+#codrops-title > h4:hover {
+  background: beige;
+  color: blue;
 }
 
 #carousel-container {
@@ -106,7 +115,7 @@ h5 {
 }
 
 .carousel-slide-title {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
   text-align: left;
 }
